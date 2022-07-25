@@ -6,21 +6,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Lora", serif;
   color: #444;
+  font-family: "Lora", serif;
 }
 
 .headerTitleSm {
   position: absolute;
-  top: 18%;
+  top: 11,5%;
   font-size: 20px;
+  font-family: "Lora", serif;
+
 }
 
 .headerTitleLg {
   position: absolute;
-  top: 20%;
+  top: 13%;
   font-size: 100px;
+  font-family: "Lora", serif;
+
 }
+
 
 .headerImg {
   width: 100%;
