@@ -12,11 +12,11 @@ export default function Home() {
   const server = "http://localhost:5000/api/";
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get(server + "posts/");
+      const res = await axios.get(server + "posts/" + search);
       setPosts(res.data);
     };
     fetchPosts();
-  }, []);
+  }, [search]);
 
   return (
     <>
