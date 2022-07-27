@@ -1,16 +1,12 @@
-import React from "react";
 import Post from "../post/Post";
 import "./posts.css";
 
-export default function Posts() {
+export default function Posts({ posts }) {
   return (
     <div className="posts">
-      <Post img={"https://pirozhki.spb.ru/photo/Iceland/_MG_0631-PSD-10.jpg"} />
-      <Post img={"https://pirozhki.spb.ru/photo/Iceland/_MG_0631-PSD-10.jpg"} />
-      <Post img={"https://pirozhki.spb.ru/photo/Iceland/_MG_0631-PSD-10.jpg"} />
-      <Post img={"https://pirozhki.spb.ru/photo/Iceland/_MG_0631-PSD-10.jpg"} />
-      <Post img={"https://pirozhki.spb.ru/photo/Iceland/_MG_0631-PSD-10.jpg"} />
-      <Post img={"https://pirozhki.spb.ru/photo/Iceland/_MG_0631-PSD-10.jpg"} />
+      {posts.map((post) => (
+        <Post post={post} />
+      ))}
     </div>
   );
 }
